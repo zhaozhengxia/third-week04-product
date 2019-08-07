@@ -1,11 +1,18 @@
 <template>
-    
+  <div class="shopping">
+    <jx-cart-shop></jx-cart-shop>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "ShopList"
+  import Shop from './Shop';
+
+  export default {
+    name: "ShopList",
+    components: {
+      "jx-cart-shop": Shop
     }
+  }
 </script>
 
 <style scoped>
